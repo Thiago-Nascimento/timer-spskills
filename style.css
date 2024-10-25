@@ -39,20 +39,20 @@ body {
 }
 
 .titulos {
-    width: 1360px;
-    margin-bottom: 158px;
+    width: 1200px;
+    margin-bottom: 130px;
     
     align-self: flex-end;
 
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .container-tempo {
@@ -67,7 +67,7 @@ h2 {
 
     margin-bottom: 40px;
 
-    font-size: 128px;
+    font-size: 110px;
     font-weight: bold;
 }
 
