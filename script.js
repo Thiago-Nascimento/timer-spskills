@@ -4,7 +4,7 @@ let botaoPausar = document.getElementById("botao-pausar")
 
 const modalidade = prompt("Digite qual é a modalidade:")
 const modulo = prompt("Digite qual é o módulo/prova:")
-let tempoGlobal = prompt("Quanto tempo de prova: (Formato 1:00:00 - h:mm:ss)")
+let tempoGlobal = prompt("Quanto tempo de prova: (Formato 01:00:00 - h:mm:ss)")
 
 let idTimer;
 
@@ -18,6 +18,11 @@ const renderizar = () => {
     elementoTempo.innerText = tempoGlobal
     elementoModulo.innerText = modulo
     elementoModalidade.innerText = modalidade
+}
+
+const tocarAlarme = () => {
+    const alarme = new Audio('sounds/alarm.mp3')
+    alarme.play()
 }
 
 const pausarTimer = () => {
@@ -64,6 +69,7 @@ const iniciarTimer = (tempo_input) => {
                         // Se horas, minutos e segundos chegarem a 0, para o timer
                         clearInterval(timer);
                         console.log("Tempo esgotado!");
+                        tocarAlarme()
                     }
                 }
             }
