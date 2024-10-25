@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer SPSkills</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body onload="renderizar()">
+    <main class="container-grid">
+        <div class="titulos">
+            <h1 id="modulo">Módulo</h1>
+            <h2 id="modalidade">Modalidade</h2>
+        </div>
+        
+        <div class="container-tempo">
+            <span id="tempo" class="timer">3:00:00</span>
+            <button id="botao-iniciar" onclick="iniciarTimer(tempoGlobal)" class="iniciar-timer">Iniciar</button>
+            <button id="botao-pausar" onclick="pausarTimer()" class="pausar-timer">Pausar</button>
+        </div>
+    </main>
+</body>
+</html>
