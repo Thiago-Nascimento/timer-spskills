@@ -67,7 +67,7 @@ const iniciarTimer = (tempo_input) => {
                         segundos = 59;
                     } else {
                         // Se horas, minutos e segundos chegarem a 0, para o timer
-                        clearInterval(timer);
+                        clearInterval(idTimer);
                         console.log("Tempo esgotado!");
                         tocarAlarme()
                     }
